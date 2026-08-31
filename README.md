@@ -32,9 +32,9 @@ Minor checks
 - [✔] USB mass storage export
 - [✔] set brightness
 - [✔] vibrate
-- [✔] screenshot
+- [ X ] screenshot
 - [✔] partition SD card
-- [✔] Fastbootd
+- [ X ] Fastbootd
 - [✔] Flashing image or magisk.zip file
 
 # Clone (example)
