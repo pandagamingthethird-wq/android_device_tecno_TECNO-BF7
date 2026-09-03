@@ -171,10 +171,7 @@ TWRP_INCLUDE_LOGCAT := false
 TARGET_USES_LOGD := false
 
 # Global compiler flags for size reduction
-TARGET_GLOBAL_CFLAGS += -Oz -ffunction-sections -fdata-sections \
+TARGET_GLOBAL_CLANG_FLAGS += -Oz -ffunction-sections -fdata-sections \
     -fno-unwind-tables -fno-asynchronous-unwind-tables -fomit-frame-pointer
-
-# Also apply to linker
-TARGET_GLOBAL_LDFLAGS += -Wl,--gc-sections
 
 
