@@ -1,6 +1,5 @@
 DEVICE_PATH := device/tecno/BF7
 
-# For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
@@ -67,6 +66,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_BOOTIMAGE_USE_SECOND := true
+BOARD_RAMDISK_USE_LZ4 := true
 BOARD_BOOTIMAGE_COMPRESSION_ALGORITHM := lzma
 
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
@@ -144,6 +144,10 @@ TW_INCLUDE_NTFS_3G := false
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP :=true
 TW_INCLUDE_REPACK_TOOL := true
+TW_EXCLUDE_BATTERY_PERCENT := true
+TW_NO_CPU_TEMP := true
+TW_INCLUDE_DUMLOCK := false
+TW_INCLUDE_INJECTTWRP := false
 
 
 # Metadata
@@ -165,4 +169,12 @@ TW_EXCLUDE_APEX := true
 # Debug
 TWRP_INCLUDE_LOGCAT := false
 TARGET_USES_LOGD := false
+
+# Global compiler flags for size reduction
+TARGET_GLOBAL_CFLAGS += -Oz -ffunction-sections -fdata-sections \
+    -fno-unwind-tables -fno-asynchronous-unwind-tables -fomit-frame-pointer
+
+# Also apply to linker
+TARGET_GLOBAL_LDFLAGS += -Wl,--gc-sections
+
 
