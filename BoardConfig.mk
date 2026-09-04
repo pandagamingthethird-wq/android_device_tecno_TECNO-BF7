@@ -133,7 +133,6 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_BASH := true
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_REPACKTOOLS := false
-TW_NO_FASTBOOT_BOOT := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_LPTOOLS := true
@@ -146,8 +145,6 @@ TW_INCLUDE_LIBRESETPROP :=true
 TW_INCLUDE_REPACK_TOOL := true
 TW_EXCLUDE_BATTERY_PERCENT := true
 TW_NO_CPU_TEMP := true
-TW_INCLUDE_DUMLOCK := false
-TW_INCLUDE_INJECTTWRP := false
 
 
 # Metadata
@@ -164,17 +161,10 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 
 # No Vibration
 TW_NO_HAPTICS := true
+TW_NO_FASTBOOT_BOOT := true
 
 # TWRP-Specific configuration
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
-
-# Debug
-TWRP_INCLUDE_LOGCAT := false
-TARGET_USES_LOGD := false
-
-# Global compiler flags for size reduction
-TARGET_GLOBAL_CLANG_FLAGS += -Oz -ffunction-sections -fdata-sections \
-    -fno-unwind-tables -fno-asynchronous-unwind-tables -fomit-frame-pointer
 
 
