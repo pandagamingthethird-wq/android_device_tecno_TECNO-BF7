@@ -153,8 +153,11 @@ TW_INCLUDE_INJECTTWRP := false
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
-#Decryption
+# Crypto
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_USE_FSCRYPT_POLICY := 2
+TW_FORCE_KEYMASTER_VER := true
 
 # No Recovery Partition 
 TW_HAS_NO_RECOVERY_PARTITION := true
