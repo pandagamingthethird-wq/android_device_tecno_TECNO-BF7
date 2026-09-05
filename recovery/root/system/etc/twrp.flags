@@ -6,9 +6,6 @@
 /product_image ext4 /dev/block/mapper/product flags=backup=1;flashimg=1;slotselect
 /system_ext_image ext4 /dev/block/mapper/system_ext flags=backup=1;flashimg=1;slotselect
 
-# Metadata
-/metadata ext4 /dev/block/by-name/md_udc flags=backup=1;display="Metadata"
-
 # Boot / dtbo
 /boot emmc /dev/block/by-name/boot flags=backup=1;display="Boot";flashimg=1;slotselect
 /dtbo emmc /dev/block/by-name/dtbo flags=backup=1;display="Dtbo";flashimg=1;slotselect
