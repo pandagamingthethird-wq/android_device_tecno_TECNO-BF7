@@ -1,5 +1,0 @@
-# Additional fstab — fallback if vendor fstab doesn't provide all /data entries
-# Pre-mounted by init.recovery.mt6761.rc to bypass vendor fstab flags
-
-# Userdata partition (crypto flags removed — no TW_INCLUDE_CRYPTO)
-/dev/block/by-name/userdata    /data    f2fs    noatime,nosuid,nodev,discard    wait,check,formattable,resize,encryptable=/dev/block/platform/bootdevice/by-name/metadata,keydirectory=/metadata/vold/metadata_encryption
