@@ -158,9 +158,6 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 # No Recovery Partition 
 TW_HAS_NO_RECOVERY_PARTITION := true
 
-TW_USE_BOOTCTRL := true
-TW_BOOT_CONTROL_VERSION := 1.0
-
 # No Vibration
 TW_NO_HAPTICS := true
 TW_NO_FASTBOOT_BOOT := true
