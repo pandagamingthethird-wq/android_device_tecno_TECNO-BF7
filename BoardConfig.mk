@@ -155,6 +155,7 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 
 # No Vibration
 TW_NO_HAPTICS := true
+TW_NO_FASTBOOT_BOOT := true
 
 # TWRP-Specific configuration
 TW_EXCLUDE_TWRPAPP := true
