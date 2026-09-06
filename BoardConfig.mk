@@ -143,6 +143,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 
+
 # No Recovery Partition 
 TW_HAS_NO_RECOVERY_PARTITION := true
 
@@ -155,4 +156,4 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
 
 TARGET_RECOVERY_DEVICE_MODULES := libcrypto-mdapp libkeymaster4 android.hardware.gatekeeper libhardware
-
+TW_INCLUDE_CRYPTO := true
