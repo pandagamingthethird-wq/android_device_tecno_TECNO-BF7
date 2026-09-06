@@ -38,10 +38,11 @@ PRODUCT_PACKAGES += \
     update_verifier 
 
 PRODUCT_COPY_FILES += \
-    system/lib64/libcrypto.so:system/lib64/libcrypto.so \
+    vendor/lib64/libcrypto-mdapp.so:system/lib64/libcrypto-mdapp.so \
+    vendor/lib64/android.hardware.gatekeeper@1.0.so:system/lib64/android.hardware.gatekeeper@1.0.so \
     system/lib64/libkeymaster4.so:system/lib64/libkeymaster4.so \
-    system/lib64/libgatekeeper.so:system/lib64/libgatekeeper.so \
     system/lib64/libhardware.so:system/lib64/libhardware.so
+
 
 
 
