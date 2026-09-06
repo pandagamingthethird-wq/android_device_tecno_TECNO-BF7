@@ -37,3 +37,11 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier 
 
+PRODUCT_COPY_FILES += \
+    system/lib64/libcrypto.so:system/lib64/libcrypto.so \
+    system/lib64/libkeymaster4.so:system/lib64/libkeymaster4.so \
+    system/lib64/libgatekeeper.so:system/lib64/libgatekeeper.so \
+    system/lib64/libhardware.so:system/lib64/libhardware.so
+
+
+
