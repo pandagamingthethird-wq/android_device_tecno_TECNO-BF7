@@ -154,4 +154,5 @@ TW_NO_FASTBOOT_BOOT := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
 
+TARGET_RECOVERY_DEVICE_MODULES := libcrypto-mdapp libkeymaster4 android.hardware.gatekeeper libhardware
 
