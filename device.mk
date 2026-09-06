@@ -40,5 +40,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/lib64/libcrypto-mdapp.so:vendor/lib64/libcrypto-mdapp.so \
     vendor/lib64/android.hardware.gatekeeper@1.0.so:vendor/lib64/android.hardware.gatekeeper@1.0.so \
-    system/lib64/libkeymaster4.so:system/lib64/libkeymaster4.so \
     system/lib64/libhardware.so:system/lib64/libhardware.so
