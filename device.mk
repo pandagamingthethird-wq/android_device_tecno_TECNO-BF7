@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2025 The Android Open Source Project
 # Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
 #
@@ -9,7 +8,7 @@ LOCAL_PATH := device/tecno/BF7
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# A/B
+# A/B OTA
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -37,12 +36,9 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier 
 
+# Crypto / Keymaster / Gatekeeper blobs
 PRODUCT_COPY_FILES += \
-    vendor/lib64/libcrypto-mdapp.so:system/lib64/libcrypto-mdapp.so \
-    vendor/lib64/android.hardware.gatekeeper@1.0.so:system/lib64/android.hardware.gatekeeper@1.0.so \
+    vendor/lib64/libcrypto-mdapp.so:vendor/lib64/libcrypto-mdapp.so \
+    vendor/lib64/android.hardware.gatekeeper@1.0.so:vendor/lib64/android.hardware.gatekeeper@1.0.so \
     system/lib64/libkeymaster4.so:system/lib64/libkeymaster4.so \
     system/lib64/libhardware.so:system/lib64/libhardware.so
-
-
-
-
