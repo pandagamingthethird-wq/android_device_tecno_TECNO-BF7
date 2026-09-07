@@ -35,8 +35,3 @@ PRODUCT_PACKAGES += \
     cppreopts.sh \
     update_engine \
     update_verifier 
-
-# Crypto / Keymaster / Gatekeeper blobs
-PRODUCT_COPY_FILES += \
-    vendor/lib64/libcrypto-mdapp.so:vendor/lib64/libcrypto-mdapp.so \
-    vendor/lib64/android.hardware.gatekeeper@1.0.so:vendor/lib64/android.hardware.gatekeeper@1.0.so \
