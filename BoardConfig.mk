@@ -153,5 +153,8 @@ TW_NO_FASTBOOT_BOOT := true
 # TWRP-Specific configuration
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE := true
+TW_USE_FSCRYPT_POLICY := true
 
 TARGET_RECOVERY_DEVICE_MODULES := libcrypto-mdapp libkeymaster4 android.hardware.gatekeeper libhardware
