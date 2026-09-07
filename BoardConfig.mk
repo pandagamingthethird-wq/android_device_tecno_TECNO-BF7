@@ -156,5 +156,3 @@ TW_EXCLUDE_APEX := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
-
-TARGET_RECOVERY_DEVICE_MODULES := libcrypto-mdapp libkeymaster4 android.hardware.gatekeeper libhardware
