@@ -129,7 +129,6 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 
 # Tools / Resetprop and magiskboot
-TW_INCLUDE_REPACK_TOOL := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_NO_CPU_TEMP := true
 
