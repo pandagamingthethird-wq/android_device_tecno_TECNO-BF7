@@ -1,8 +1,3 @@
-# Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 
 LOCAL_PATH := device/tecno/BF7
 
@@ -17,14 +12,11 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1-service.trustonic \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-impl.recovery \
     android.hardware.boot@1.0-service \
     bootctrl.mt6761 \
-    bootctrl.mt6761.recovery \
-    vendor.trustonic.tee@1.1-service \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-service
+    bootctrl.mt6761.recovery 
 
 PRODUCT_PACKAGES += \
     bootctrl \
