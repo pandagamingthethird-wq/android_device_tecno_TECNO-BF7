@@ -63,6 +63,7 @@ endif
 
 # Compress
 TARGET_RAMDISK_COMPRESSION := lzma
+BOARD_RAMDISK_USE_GZIP := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -132,7 +133,6 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Tools / Resetprop and magiskboot
 TW_INCLUDE_REPACK_TOOL := true
-TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_NO_CPU_TEMP := true
 
