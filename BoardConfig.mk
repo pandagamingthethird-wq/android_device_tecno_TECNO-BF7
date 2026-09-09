@@ -90,8 +90,6 @@ TARGET_COPY_OUT_PRODUCT := product
 # Platform
 TARGET_BOARD_PLATFORM := mt6761
 
-GZIP_RAMDISK_TARGETS := boot
-BOARD_RAMDISK_USE_GZIP := true
 
 #Recovery Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
