@@ -7,12 +7,12 @@ Blocking checks
 - [✔] Backup to internal/microSD - MicroSD only
 - [✔] Restore from internal/microSD
 - [✔] reboot to system(finally)
-- [?] ADB
+- [✔] ADB
 
 Medium checks
 - [ X ] update.zip sideload
 - [?] UI colors (red/blue inversions)
-- [?] Screen goes off and on
+- [✔] Screen goes off and on
 - [?] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [✔] all important partitions listed in mount/backup lists
 - [ X ] backup/restore to/from external storage
@@ -34,8 +34,8 @@ Minor checks
 - [✔] vibrate
 - [ X ] screenshot
 - [✔] partition SD card
-- [ X ] Fastbootd
-- [✔] Flashing image or magisk.zip file
+- [ X ] Fastboot
+- [ X ] Flashing image or magisk.zip file
 
 # Clone (example)
     git clone https://github.com/Charles078728/android_device_TECNO-BF7.git -b main device/tecno/BF7 
