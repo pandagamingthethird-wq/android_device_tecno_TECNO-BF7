@@ -90,6 +90,8 @@ TARGET_COPY_OUT_PRODUCT := product
 # Platform
 TARGET_BOARD_PLATFORM := mt6761
 
+BOARD_RAMDISK_USE_GZIP := true
+
 #Recovery Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
@@ -144,9 +146,9 @@ TW_NO_FASTBOOT_BOOT := true
 
 # TWRP-Specific configuration
 TW_EXCLUDE_EXTRA_LANGUAGE := true
-TW_INCLUDE_LPTOOLS := true
+TW_EXCLUDE_LPTOOLS := true
 TW_EXCLUDE_BASH := true
-TW_EXCLUDE_TWRPAPP := false
+TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_APEX := true
