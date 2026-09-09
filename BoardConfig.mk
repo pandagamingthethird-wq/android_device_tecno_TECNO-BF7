@@ -145,4 +145,3 @@ TW_NO_FASTBOOT_BOOT := true
 # TWRP-Specific configuration
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
-TW_CRYPTO_FS_TYPE := f2fs
