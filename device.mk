@@ -19,8 +19,7 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6761.recovery 
 
 PRODUCT_PACKAGES += \
-    bootctrl \
-    fastbootd
+    bootctrl 
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
